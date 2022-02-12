@@ -1,0 +1,181 @@
+@media (max-width: 1200px)
+    .menu
+        &_item
+            padding-right: 30px
+        &_link
+            font-size: 14px
+
+    .promo
+        &_header
+            font-size: 45px
+        &_subheader
+            font-size: 25px
+        &_descr
+            font-size: 16px    
+    
+    .content
+        &_img
+            width: 165px
+
+    .mobile
+        &_item
+            width: 300px
+
+
+@media (max-width: 992px)
+    .menu
+        padding: 13px 0
+        &_item
+            padding-right: 15px
+        &_link
+            font-size: 12px
+    
+    .subheader
+        &_num
+            font-size: 20px
+
+    .promo
+        &_header
+            line-height: 45px
+
+    .content
+        &_img
+            width: 130px
+        &_descr
+            margin-top: 15px
+            width: 300px
+
+    .mobile
+        &_item
+            width: 215px
+            &_subtitle
+                font-size: 20px
+    footer
+        .footer_icon
+            margin-left: 55px
+
+        .footer_menu
+            margin-right: 80px
+            .link_title
+                font-size: 11px
+        
+    .container_content
+        flex-direction: column
+        padding: 20px
+        align-items: center
+
+
+@media (max-width: 767px)
+    .auto
+        &_bottom
+            &_img
+                width: 500px
+                height: 400px
+    .menu
+        position: fixed
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        padding: 20px 15px
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh
+        transition: .6s all
+        background-color: $dark-shadow-color
+        &_active
+            left: 0
+        &_item
+            padding-right: 0
+            border-right: none
+            margin: 10px 0
+        &_link
+            font-size: 20px 
+    
+    .hamburger
+        display: block
+        position: absolute
+        right: 10px
+        top: 50%
+        transform: translateY(-50%)
+        width: 30px
+        height: 12px
+        span
+            display: block
+            height: 2px
+            width: 100%
+            background-color: $white-color
+            margin-bottom: 3px
+            transition: .6s all
+        &_active
+            span
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)  // градусы
+                    top: 1px
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(45deg)
+                    
+    .xs-hidden
+        display: none
+
+    .xs-visible
+        display: block
+
+    .subheader
+        &_btn
+            margin-left: 78px
+        &_num
+            color: $white_color
+            font-size: 16px
+            font-weight: 400
+            text-transform: uppercase
+
+
+@media (max-width: 575px)
+    .menu
+        &_item
+            text-align: center
+    .subheader
+        &_btn
+            margin-left: -24px
+
+    .promo
+        &_header
+            font-size: 25px
+            line-height: 25px
+        &_subheader
+            font-size: 20px
+            line-height: 20px
+        &_descr
+            font-size: 12px
+
+    .auto
+        &_bottom
+            &_img
+                width: 300px
+                height: 220px
+                margin-bottom: 146px 
+    footer
+        .footer_icon
+            margin-left: -10px
+
+        .footer_menu
+            display: none
+        
+        .footer_app
+            display: none
+
+    .subheader
+        img
+            margin-top: 20px
+            width: 172px
+        &_official
+            display: none
+        &_btn
+            margin-left: 24px
+            width: 123px
+        &_num
+            font-size: 15px

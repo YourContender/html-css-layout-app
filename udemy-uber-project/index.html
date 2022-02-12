@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./src/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="./src/css/bootstrap-reboot.min.css">   <!-- сетка с колонками -->
     <link rel="stylesheet" href="./src/css/style.min.css">
-    <title>Udemy uber-app</title>
+    <title>Udemy uber-app</title> 
 </head>
 <body>
 
@@ -34,23 +34,29 @@
                         <a href="#" class="menu_link">Оставить заявку</a>
                     </li>
                 </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </nav>
 
         <div class="subheader">
             <div class="container">
                <div class="row">                            <!-- offset-md-1 сколько колонок отступа-->
-                    <div class="col-md-4 offset-md-1">      <!-- col-md-4 сколько занимает этот блок колонки-->                            
+                    <div class="col-6 col-md-4 offset-md-1">      <!-- col-md-4 сколько занимает этот блок колонки-->                            
                         <a class="subheader_logo" href="#">
                             <img src="/src/img/logo/Uber.png" alt="logo">
                         </a>
                         <div class="subheader_official">Официальный партнер Uber</div>
                     </div>
-                    <div class="col-md-2 offset-md-2">
+                    <div class="xs-hidden col-md-3 offset-md-1 col-xl-2 offset-xl-2">
                         <div class="subheader_call">Звоните нам ежедневно</div>
                         <a href="tel:84957970988" class="subheader_num">8 495 797 09 88</a>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-6 col-md-2">
+                        <a href="tel:84957970988" class="xs-visible subheader_num">8 495 797 09 88</a>
                         <button class="subheader_btn">заказать звонок</button>
                     </div>
                </div>
@@ -61,7 +67,7 @@
     <section class="promo">
         <div class="container">
             <div class="row">
-                <div class="col-md-10 offset-md-1">
+                <div class="col-md-12 offset-md-0 col-lg-10 offset-lg-1">
                     <h1 class="promo_header">КОМПАНИЯ UBER PARTNERS!</h1>
                     <h2 class="promo_subheader">ПРИГЛАШАЕМ ВОДИТЕЛЕЙ! НА СВОЕМ АВТО!</h2>
                     <div class="promo_descr">
@@ -343,66 +349,114 @@
             <div class="col-md-6">
                 <div class="require_block">
                     <div class="require_subtitle">
-                        УСЛОВИЯ: со своим авто:
+                        УСЛОВИЯ: на авто компании:
                     </div>
                     <ul class="require_block_list">
-                        <li>Подключаем к системе UBER под 10%</li>
-                        <li>Ни каких взносов 0%</li>
-                        <li>Можем подключать удаленно без приезда в офис</li>
-                        <li>ИП не требуется</li>
-                        <li>Заказы распределяются без учета рейтинга ближай-<br>шим водителям</li>
-                        <li>Работа только по безналичному расчету</li>
-                        <li>Деньги перечисляем на карту водителю или наличны-<br>ми в офисе</li>
+                        <li>Предоставляем авто без залога</li>
+                        <li>Без ежедневных выплат по аренде</li>
+                        <li>Среда пятница и суббота работа на компанию осталь-<br>ные дни вы работаете на себя</li>
                     </ul>
-                    <div class="require_descr">
-                        В день заработок составляет 7000-12000р + бонус 3000т рублей
-                    </div>
                 </div>
             </div>
 
             <div class="col-md-6">
-                <div class="require_block require_block_nmb">
+                <div class="require_block require_block_nmb warning">
                     <div class="require_subtitle">
-                        УСЛОВИЯ: со своим авто:
+                        ТРЕБОВАНИЕ:
                     </div>
                     <ul class="require_block_list">
-                        <li>Подключаем к системе UBER под 10%</li>
-                        <li>Ни каких взносов 0%</li>
-                        <li>Можем подключать удаленно без приезда в офис</li>
-                        <li>ИП не требуется</li>
-                        <li>Заказы распределяются без учета рейтинга ближай-<br>шим водителям</li>
-                        <li>Работа только по безналичному расчету</li>
-                        <li>Деньги перечисляем на карту водителю или наличны-<br>ми в офисе</li>
+                        <li>Наличие автомобиля без рекламы</li>
+                        <li>Автомобиль не должен быть желтый и не с желтыми<br>номерами</li>
+                        <li>Машина не старше 3 лет</li>
+                        <li>Стаж вождения не менее 3 лет</li>
+                        <li>Девайс на системе андроид 4.0 и выше(самсунг)</li>
                     </ul>
-                    <div class="require_descr">
-                        В день заработок составляет 7000-12000р + бонус 3000т рублей
-                    </div>
                 </div>
             </div>
 
             <div class="col-md-6">
-                <div class="require_block require_block_nmb">
+                <div class="require_block require_block_nmb warning">
                     <div class="require_subtitle">
-                        УСЛОВИЯ: со своим авто:
+                        ДОКУМЕНТЫ:
                     </div>
                     <ul class="require_block_list">
-                        <li>Подключаем к системе UBER под 10%</li>
-                        <li>Ни каких взносов 0%</li>
-                        <li>Можем подключать удаленно без приезда в офис</li>
-                        <li>ИП не требуется</li>
-                        <li>Заказы распределяются без учета рейтинга ближай-<br>шим водителям</li>
-                        <li>Работа только по безналичному расчету</li>
-                        <li>Деньги перечисляем на карту водителю или наличны-<br>ми в офисе</li>
+                        <li>Права 2 стороны</li>
+                        <li>Паспорт лицевая сторона</li>
+                        <li>СтС</li>
+                        <li>Лицензия (если есть)</li>
+                        <li>Номер телефона</li>
+                        <li>Номер карты для перечисления денег(указать в письме)!</li>
                     </ul>
-                    <div class="require_descr">
-                        В день заработок составляет 7000-12000р + бонус 3000т рублей
-                    </div>
                 </div>
             </div>
 
         </div>
         </div>
     </section>
+
+    <section class="world">
+        <div class="container">
+            <div class="world_info">
+                <div class="world_info_header">
+                    <button class="lable">города</button>
+                    <h2 class="title">По всему миру</h2>
+                    <span class="subtitle">Мы в вашем городе и по всему миру</span>
+                </div>
+                <div class="world_info_link">
+                    <a class="link" href="#">посмотреть все города</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer_icon">
+            <div class="footer_icon_block">
+                <a href="#">
+                    <img src="./src/icons/facebook.png" alt="icon">
+                </a>
+            </div>
+            <div class="footer_icon_block">
+                <a href="#">
+                    <img src="./src/icons/twitter.png" alt="icon">
+                </a>
+            </div>
+            <div class="footer_icon_block">
+                <a href="#">
+                    <img src="./src/icons/linkedin.png" alt="icon">
+                </a>
+            </div>
+            <div class="footer_icon_block">
+                <a href="#">
+                    <img src="./src/icons/instagram.png" alt="icon">
+                </a>
+            </div>
+          
+        </div>
+
+        <div class="footer_menu"> 
+            <div>
+                <a class="link_title" href="#">На главную</a>
+                <a class="link_title" href="#">города</a>
+                <a class="link_title" href="#">Для водителей</a>
+            </div>
+            <div>
+                <a class="link_subtitle" href="#">центр поддержки</a>
+                <a class="link_subtitle" href="#">вакансии</a>
+                <a class="link_subtitle" href="#">разработчики</a>
+                <a class="link_subtitle" href="#">блог</a>
+            </div>
+            <div>
+                <a class="link_lang" href="#">английский</a>
+            </div>
+        </div>
+
+        <div class="footer_app">
+            <a href="#">
+                <img src="./src/icons/icon_ios.png" alt="links">
+            </a>
+        </div>
+    </footer>
 
     <script src='./src/js/index.js'></script>
 </body>
