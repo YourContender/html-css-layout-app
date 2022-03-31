@@ -1,0 +1,268 @@
+@media (max-width: 1200px) 
+    .header
+        &_info
+            margin-left: 10px
+        &_log
+            margin-right: 10px
+
+    .nav
+        &_block
+            margin-left: 10px
+
+    .content
+        height: 580px
+        &_season
+            height: 580px
+            &_title
+                margin-top: 0
+            &_list
+                margin-left: 27px
+                .block
+                    height: 200px
+                    width: 90%
+                    margin: 0
+                    padding: 0
+                    img
+                        width: 165px
+                .item
+                    .text
+                        width: 145px
+                        font-size: 14px
+        &_catalog
+            height: 580px
+
+    .container 
+        .title 
+            margin-top: 55px
+            .line
+                margin: 10px auto
+        .commercial
+            justify-content: center
+            &_item
+                margin-top: 24px
+                &_block
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    height: 250px
+                    width: 230px
+                    img
+                        width: 200px
+
+        &_collection
+            .text_block
+                font-size: 24px
+
+    .features
+        height: 580px
+        &_descr
+            &_text
+                font-size: 18px
+
+@media (max-width: 1027px) 
+    .brands
+        margin-top: 320px
+        img
+            width: 230px
+
+    .content
+        height: 520px
+        &_season
+            height: 520px
+            
+        &_catalog
+            height: 520px
+
+
+@media (max-width: 991px)
+    .header
+        &_info
+            margin-left: 20px
+        &_log
+            margin-right: 45px
+
+    .nav
+        &_block
+            &_link
+                margin-right: 30px
+
+    .content 
+        height: 500px
+        &_season
+            height: 500px
+            &_list
+                margin-left: 17px
+                .block
+                    height: 155px
+                    img
+                        width: 145px
+        &_catalog
+            height: 500px
+        &_collection
+            width: 350px
+            .text_block
+                font-size: 21px
+            .btn_block
+                width: 200px
+                font-size: 20px
+    
+    .features
+        height: 500px
+        &_descr
+            &_text
+                width: 350px
+                font-size: 14px
+
+    .container 
+        width: 100%
+        .commercial
+            justify-content: center
+            &_item
+                &_block
+                    width: 200px
+                    height: 215px
+                    img
+                        width: 185px
+                &_text
+                    width: 200px
+                    font-size: 15px
+
+    .brands
+        margin-top: 320px
+        img
+            width: 180px
+    .footer 
+        &_about
+            width: 290px
+            padding-left: 15px
+            &_box
+                width: 250px
+                font-size: 14px
+        &_category
+            width: 290px
+            padding-right: 50px
+        &_link
+            width: 300px
+            margin-right: 20px
+            span
+                display: block
+                width: 240px
+                
+            &_box
+                input
+                    width: 114px
+                    height: 24px
+                    border: none
+                button
+                    width: 110px
+                    height: 28px
+                    font-size: 12px
+
+@media (max-width: 875px)
+    .content
+        display: flex
+        flex-direction: column
+        align-items: center
+        height: 1000px
+        &_season
+            &_title
+                .line
+                    margin-top: 10px
+                    margin-bottom: 40px
+        &_catalog
+            width: 100%
+            height: 80%
+
+
+@media (max-width: 770px)
+    .header
+        &_info
+            margin-left: 28px
+        &_log
+            margin-right: 20px
+
+    .hamburger 
+        display: block
+        position: absolute
+        right: 20px
+        top: 10%
+        transform: translateY(-50%)
+        width: 30px
+        height: 12px
+        div
+            display: block
+            height: 2px
+            width: 100%
+            background-color: #fff
+            margin-bottom: 3px
+            transition: .6s all
+
+        &_active
+            div
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)  
+                    top: 1px
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(45deg)
+
+    .nav
+        &_block
+            &_logo
+                margin-left: 20px
+            &_link
+                display: none
+                &_active
+                    display: block
+                    position: absolute
+                    top: 50%
+                    transform: translateY(-50%)
+                    background-color: #000000a4
+                    height: 100%
+                    width: 50%
+                    padding-top: 50%
+                    margin-left: -10px
+                    transition: .6s all
+                    .block
+                        &_item
+                            width: 270px
+                            margin: 0 auto
+                            span
+                                font-size: 20px
+                            &_link
+                                margin: 0 auto
+                                img
+                                    width: 30px
+
+    .features
+        &_descr
+            &_btn
+                width: 250px
+                font-size: 14px
+    .footer
+        &_about
+            h4
+                font-size: 17px
+                text-align: center
+            &_box
+                font-size: 12px
+                text-align: center
+        &_category
+            padding-right: 17px
+            h4
+                font-size: 17px
+        &_link
+            h4
+                font-size: 17px
+            span
+                font-size: 12px
+                width: 195px
+
+    .brands
+        margin-top: 490px
+        &_list
+            flex-wrap: wrap
+            img
+                width: 160px
