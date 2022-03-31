@@ -241,14 +241,12 @@
             &_btn
                 width: 250px
                 font-size: 14px
+            &_text
+                display: none
+
     .footer
         &_about
-            h4
-                font-size: 17px
-                text-align: center
-            &_box
-                font-size: 12px
-                text-align: center
+            display: none
         &_category
             padding-right: 17px
             h4
@@ -266,3 +264,60 @@
             flex-wrap: wrap
             img
                 width: 160px
+
+@media (max-width: 575px)
+    .content
+        height: 870px
+        &_season
+            height: 650px
+
+    .features
+        &_descr
+            &_text
+                display: none
+            &_btn
+                width: 160px
+
+    .footer
+        &_about
+            display: none
+
+    .commercial
+        &_item
+            &:nth-child(5)
+                display: none
+            &:nth-child(6)
+                display: none
+            &:nth-child(7)
+                display: none
+            &:nth-child(8)
+                display: none
+        &_btn
+            display: block
+            position: absolute
+            left: 35%
+            margin-top: -100px
+            background: none
+            color: $white
+            width: 160px
+            height: 50px
+            border: 2px solid $white
+            border-radius: 5px
+            font-size: 18px
+            letter-spacing: 0.1em
+            text-transform: uppercase
+            cursor: pointer
+            &:hover
+                background-color: $white
+                color: $black
+                transition: .7s all
+    
+    .brands
+        margin-top: 190px
+
+@media (max-width: 513px)
+    .commercial
+        height: 1100px
+        margin-bottom: 195px
+        &_item
+            margin-left: 49px
