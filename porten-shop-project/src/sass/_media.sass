@@ -312,7 +312,8 @@
         &_btn
             display: block
             position: absolute
-            left: 35%
+            left: 50%
+            transform: translateX(-50%)
             margin-top: -100px
             background: none
             color: $white
@@ -390,3 +391,105 @@
             &_link
                 &_active
                     width: 60%
+
+@media (max-width: 480px)
+    .header
+        &_info
+            &_link
+                span
+                    font-size: 12px
+                    margin-left: -5px
+
+    .promo
+        &_block
+            &_item
+                width: 275px
+                height: 275px
+
+    .content 
+        height: 670px
+        &_season
+            &_title
+                h2
+                    font-size: 24px
+            &_list
+                .block
+                    width: 90%
+                    img
+                        width: 110px
+                .item
+                    .text
+                        width: 78px
+        &_catalog
+            height: 94%
+        &_collection
+            margin-top: -50px
+            .text_block
+                font-size: 16px
+            .btn_block
+                width: 175px
+                font-size: 18px
+
+    .features
+        &_descr
+            &_title
+                font-size: 14px
+                .line
+                    width: 135px
+            &_btn
+                width: 150px
+        
+    .container
+        .title
+            font-size: 20px
+
+    .brands
+        height: 450px
+
+    .footer
+        &_link
+            span
+                display: none
+            &_box
+                input
+                    width: 130px
+
+@media (max-width: 320px)
+    .content 
+        height: 670px
+        &_season
+            &_title
+                h2
+                    font-size: 24px
+            &_list
+                .block
+                    width: 85%
+                    height: 140px
+                    img
+                        width: 100px
+                .item
+                    .text
+                        font-size: 14px
+                        width: 68px
+
+        &_collection
+            width: 290px
+
+    .footer
+        &_category
+            padding-right: 13px
+        &_block
+            display: flex
+            flex-direction: column
+            padding: 0
+        &_link
+            h4
+                margin-left: 44px
+            span
+                display: none
+            &_box
+                align-items: flex-start
+                padding-left: 44px
+                input
+                    width: 170px
+                    height: 35px
