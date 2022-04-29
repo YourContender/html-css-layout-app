@@ -1,5 +1,7 @@
-import React from "react";
-import watch from '../../img/logo/watch.png';
+import React            from "react";
+import watch            from '../../img/logo/watch.png';
+import { database }     from "../../database";
+import { v4 as uuidv4 } from 'uuid';
 import './Content.sass';
 
 class Content extends React.Component {
@@ -7,24 +9,24 @@ class Content extends React.Component {
         super(props);
 
         this.state = {
-            data: [
-                {
-                    id: 1,
-                    title: 'Louis XVII ATHOS',
-                    price: '110 000 uah'
-                }, 
-                {
-                    id: 2,
-                    title: 'Louis XXI ATLAS',
-                    price: '170 000 uah'
-                }, 
-                {
-                    id: 3,
-                    title: 'Louis XX New York',
-                    price: '185 000 uah'
-                }
-            ]
+            data: []
         }
+    }
+
+    getRandomItems = () => {
+        let result = [];
+
+        for (let i = 0; i < 3; i++) {
+            result.push(database[Math.floor(Math.random() * (database.length - 1) + 1)])
+        } 
+
+        return this.setState({
+            data: [...this.state.data, ...result]
+        })
+    }
+
+    componentDidMount() {
+        this.getRandomItems();
     }
 
     render() {
@@ -42,11 +44,11 @@ class Content extends React.Component {
                         
                         <div className="content_season_list">
                             {
-                                data.map(item => {
-                                    const { title, price, id } = item;
+                                data.map((item, i) => {
+                                    const { title, price } = item;
 
                                     return (
-                                        <div className="item" key={id}>
+                                        <div className="item" key={uuidv4()}>
                                             <div className="block">
                                                 <img src={watch} alt="logo"/>
                                             </div>

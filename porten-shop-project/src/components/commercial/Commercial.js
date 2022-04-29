@@ -1,5 +1,5 @@
-import React from "react";
-import watch from '../../img/logo/watch.png';
+import React        from "react";
+import watch        from '../../img/logo/watch.png';
 import { database } from '../../database';
 import './Commercial.sass';
 

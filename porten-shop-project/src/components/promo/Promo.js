@@ -1,4 +1,4 @@
-import React from 'react';
+import React          from 'react';
 import logoShopSecond from '../../img/logo/logo-porten-2.png';
 import './Promo.sass';
 

@@ -1,7 +1,6 @@
-import React from "react";
-// // import './header.sass';
+import React     from "react";
+import log       from '../../img/logo/log.png';
 import iconPhone from '../../img/logo/phone-icon.png';
-import log from '../../img/logo/log.png';
 import './Header.sass'
 
 class Header extends React.Component {
